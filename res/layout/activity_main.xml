@@ -24,14 +24,14 @@
      <Button
          android:id="@+id/btn_back"
          android:layout_alignParentBottom="true"
-         android:layout_width="match_parent"
+         android:layout_width="100dp"
          android:layout_height="40sp"
          android:text="@string/back"
           />
      <Button
          android:id="@+id/btn_confirm"
          android:layout_alignParentBottom="true"
-         android:layout_width="match_parent"
+         android:layout_width="100dp"
          android:layout_height="40sp"
          android:layout_toRightOf="@id/btn_back"
          android:layout_toEndOf="@id/btn_back"
