@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+	<LinearLayout 线性布局，
+		方向水平，
+		设置最低高度50sp，使得ListView每一行间距适中
+		/>
+	<imageView 放置图像(ic_folde/ic_file)，
+		contentDescription：当图像没能正确加载时显示文字；
+		layout_gravity设置为垂直居中；
+		paddingRight向右间隔3个相对像素
+		/>
+	<TextView 放置文本(当前文件名称)
+		layout_gravity设置为垂直居中；
+		/>
+	<LinearLayout 线性布局，
+		填充父容器
+		设置水平靠右
+	<imageView 放置图像(ic_folde/ic_file)，
+		contentDescription：当图像没能正确加载时显示文字；
+		layout_gravity设置为垂直居中；
+		paddingRight向右间隔3个相对像素
+		/>
+		/>
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:minHeight="50sp" >
+    <ImageView 
+        android:id="@+id/imgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="40sp"
+        android:maxHeight="40sp"
+        android:contentDescription="@string/img_view_text"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="1sp"
+        android:paddingRight="3sp"
+        />
+	<TextView
+	    android:id="@+id/text_file_info"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:textStyle="normal"
+	    android:layout_gravity="center_vertical"
+	    android:paddingLeft="3sp"
+	    />
+	<LinearLayout  
+	    android:orientation="horizontal"  
+	    android:layout_width="fill_parent"  
+	    android:layout_height="fill_parent"  
+	    android:gravity="right"
+	    android:layout_weight="2"
+	    android:minWidth="20sp"
+		>
+		<ImageView
+		    android:id="@+id/imgView_select"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:maxWidth="40sp"
+	        android:maxHeight="40sp"
+	        android:contentDescription="@string/img_view_text"
+	        android:layout_gravity="center_vertical"
+			android:layout_marginEnd="8sp"
+			android:layout_marginRight="8dp"
+		     />
+	</LinearLayout>
+</LinearLayout>
