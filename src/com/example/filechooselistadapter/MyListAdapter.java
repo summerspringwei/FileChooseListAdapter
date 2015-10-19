@@ -181,7 +181,7 @@ public class MyListAdapter extends BaseAdapter{
 			if(!myFI.isDirectory())
 				map.put(mapKey[3], R.drawable.ic_circle_unselect);
 			else
-				map.put(mapKey[3], R.drawable.transparent);
+				map.put(mapKey[3], R.drawable.arrow_right);
 			list.add(map);
 		}
 		/**
